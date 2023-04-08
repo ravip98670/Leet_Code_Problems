@@ -6,8 +6,9 @@ public:
         for(auto n:nums)
             mp[n]++;
         
-        sort(nums.begin(),nums.end(),[&](int a,int b)
-             { return mp[a] != mp[b] ? mp[a] < mp[b] : a > b ;});
+        sort(nums.begin(),nums.end(),[&](int a,int b){
+             return mp[a] != mp[b] ? mp[a] < mp[b] : a > b ;
+        });
         
         return nums;
     }
