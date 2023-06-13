@@ -29,8 +29,6 @@ public:
             even = even->next;
         }
         odd->next = pEven;
-        return pOdd;
-
-        
+        return pOdd; 
     }
 };
